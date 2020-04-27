@@ -11,6 +11,8 @@ import { withBreadcrumb } from '../../components/BreadcrumbWrapper/BreadcrumbWra
 
 import CoursesPage from './courses/CoursesPage/CoursesPage';
 import ChaptersPage from './chapters/ChaptersPage/ChaptersPage';
+import ArchivesPage from './archives/ArchivesPage/ArchivesPage';
+import ProblemSetsPage from './problemsets/ProblemSetsPage/ProblemSetsPage';
 
 const TrainingRoutes = () => {
   const sidebarItems: ContentWithSidebarItem[] = [
@@ -27,6 +29,20 @@ const TrainingRoutes = () => {
       title: 'Chapters',
       routeComponent: Route,
       component: ChaptersPage,
+    },
+    {
+      id: 'archives',
+      titleIcon: 'box',
+      title: 'Archives',
+      routeComponent: Route,
+      component: ArchivesPage,
+    },
+    {
+      id: 'problemsets',
+      titleIcon: 'panel-stats',
+      title: 'Problemsets',
+      routeComponent: Route,
+      component: ProblemSetsPage,
     },
   ];
 
